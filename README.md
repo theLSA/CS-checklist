@@ -1,6 +1,6 @@
 # **CS-checklist**
 
-
+<br/>
 
 ## **0x00 前言**
 
@@ -74,7 +74,7 @@ WSExplorer：岁月联盟进程抓包工具
 
 strings：查看程序的字符串
 
- 
+<br/> 
 
 .net[反]编译：
 
@@ -92,7 +92,7 @@ ildasm
 
 ilasm
 
- 
+<br/> 
 
 Java反编译
 
@@ -104,12 +104,12 @@ jadx
 
 dex2jar
 
-在线版：
+在线版：<br/>
 [javare.cn]()
 
 www.javadecompilers.com
 
-
+<br/>
 
 Reflexil：组装编辑器（可以作为ilspy插件）
 
@@ -117,7 +117,7 @@ Vcg：自动化代码审计工具
 
 BinScope：二进制分析工具
 
- 
+<br/> 
 
 ## **0x06 代理设置**
 
@@ -129,17 +129,17 @@ BinScope：二进制分析工具
 
 //http的流量可以结合burpsuite方便测试（proxy server设置为burp代理地址）。
 
- 
+<br/> 
 
 ## **0x07 测试点**
 
- 
+<br/> 
 
 ### **0.** **信息收集**
 
 编译信息，开发环境/语言，使用协议，数据库，ip，混淆/加密，是否加壳等。
 
-
+<br/>
 
 案例0-CFF查看客户端信息（如编译环境）
 
@@ -147,13 +147,13 @@ dvta
 
 ![cs01](https://github.com/theLSA/cs-checklist/raw/master/demo/cs01.png)
 
- 
+<br/><br/> 
 
 ### **1.** **逆向工程**
 
 反编译，源代码泄露，硬编码key/password，加解密逻辑，角色判断逻辑（0-admin，1-normaluser），后门等。 
 
-
+<br/>
 
 案例0-反编译获取加解密逻辑并编写解密工具
 
@@ -254,7 +254,7 @@ dvta
 
 //解密代码源自https://resources.infosecinstitute.com/damn-vulnerable-thick-client-app-part-5/#article
 
-
+<br/>
 
 案例1-反编译修改代码逻辑让普通用户以管理员登录
 
@@ -270,6 +270,8 @@ dvta
 
 ![cs05](https://github.com/theLSA/cs-checklist/raw/master/demo/cs05.png)
 
+<br/><br/>
+
 ### **2.** **信息泄露**
 
 明文敏感信息，敏感文件（如安装目录下的xxx.config）。
@@ -284,7 +286,7 @@ strings直接查看客户端字符串（如ip信息）。
 
 查看源代码（如github,gitee等）
 
-
+<br/>
 
 案例0-配置敏感信息泄露
 
@@ -292,7 +294,7 @@ dvta
 
 ![cs06](https://github.com/theLSA/cs-checklist/raw/master/demo/cs06.png)
 
-
+<br/>
 
 案例1-内存泄露数据库账号密码
 
@@ -300,7 +302,7 @@ dvta
 
 ![cs07](https://github.com/theLSA/cs-checklist/raw/master/demo/cs07.png)
 
-
+<br/>
 
 案例2-源代码含有硬编码ftp账号密码
 
@@ -308,7 +310,7 @@ dvta
 
 ![cs08](https://github.com/theLSA/cs-checklist/raw/master/demo/cs08.png)
 
- 
+<br/> 
 
 案例3-开发调试日志泄露
 
@@ -316,7 +318,7 @@ dvta
 
 ![cs09](https://github.com/theLSA/cs-checklist/raw/master/demo/cs09.png)
 
-
+<br/>
 
 案例4-某系统登录后本地保存账号密码
 
@@ -324,7 +326,7 @@ dvta
 
 本案例来源于https://blog.csdn.net/weixin_30685047/article/details/95916065
 
- 
+<br/><br/> 
 
 ### **3.** **传输流量**
 
@@ -334,7 +336,7 @@ ftp等协议明文传输的账号密码
 
 SQL语句明文传输（如利用构造注入，越权等）
 
-
+<br/>
 
 案例0-正方教务系统sql语句明文传输，返回明文数据
 
@@ -344,7 +346,7 @@ SQL语句明文传输（如利用构造注入，越权等）
 
 本案例来源于wooyun
 
-
+<br/><br/>
 
 ### **4.** **其他漏洞**
 
@@ -352,7 +354,7 @@ SQL语句明文传输（如利用构造注入，越权等）
 
 如登录功能
 
- 
+<br/> 
 
 #### **用户名枚举**
 
@@ -362,7 +364,7 @@ SQL语句明文传输（如利用构造注入，越权等）
 
 ![cs14](https://github.com/theLSA/cs-checklist/raw/master/demo/cs14.png)
 
-
+<br/>
 
 #### **sql语句暴露**
 
@@ -370,7 +372,7 @@ SQL语句明文传输（如利用构造注入，越权等）
 
 ![cs15](https://github.com/theLSA/cs-checklist/raw/master/demo/cs15.png)
 
-
+<br/>
 
 #### **sql注入**
 
@@ -384,7 +386,7 @@ xxx’ or 1=1--
 
 利用显示位或报错注出数据，原理同web注入，不同数据库大同小异。
 
- 
+<br/> 
 
 案例0-oracle注入
 
@@ -392,7 +394,7 @@ xxx’ or 1=1--
 
 ![cs16](https://github.com/theLSA/cs-checklist/raw/master/demo/cs16.png)
 
-
+<br/>
 
 案例1-mssql注入
 
@@ -400,25 +402,25 @@ xxx’ or 1=1--
 
 ![cs17](https://github.com/theLSA/cs-checklist/raw/master/demo/cs17.png)
 
-
+<br/>
 
 #### **CSV注入**
 
 如导出excel，输入1+1，导出后看是否为2。
 
- 
+<br/> 
 
 #### **弱口令**
 
 可尝试admin 123456等。
 
-
+<br/>
 
 #### **XSS**
 
 如Electron，NodeWebKit等。
 
- 
+<br/> 
 
 案例0-中国蚁剑xss到rce
 
@@ -458,37 +460,37 @@ Win+node.js:
 
 https://www.anquanke.com/post/id/176379
 
- 
+<br/> 
 
 #### **命令执行**
-
+<br/>
 案例0-印象笔记windows客户端6.15本地文件读取和远程命令执行 
 
 [http://blog.knownsec.com/2018/11/%E5%8D%B0%E8%B1%A1%E7%AC%94%E8%AE%B0-windows-%E5%AE%A2%E6%88%B7%E7%AB%AF-6-15-%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96%E5%92%8C%E8%BF%9C%E7%A8%8B%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/](http://blog.knownsec.com/2018/11/印象笔记-windows-客户端-6-15-本地文件读取和远程命令执行/)
 
- 
+<br/> 
 
 案例1-某云pc客户端命令执行挖掘过程 
 
 https://www.secpulse.com/archives/53852.html
 
- 
+<br/> 
 
 案例2-金山WPS Mail邮件客户端远程命令执行漏洞(Mozilla系XUL程序利用技巧) 
 
 https://shuimugan.com/bug/view?bug_no=193117
 
- 
+<br/> 
 
 #### **逻辑缺陷**
 
 测试点同web。
 
-  
+<br/>  
 
 #### **密码明文传输** 
 
- 
+<br/> 
 
 #### **Dll劫持**
 
@@ -498,7 +500,7 @@ Linux文件搜索顺序：
 
 2. PATH顺序值目录
 
-
+<br/>
 
 程序搜索Dll顺序：
 
@@ -522,7 +524,7 @@ Linux文件搜索顺序：
 
 msf生成恶意dll放置于程序加载位置，运行程序即可触发payload。
 
- 
+<br/> 
 
 案例0-dll劫持
 
@@ -532,7 +534,7 @@ dvta
 
 ![cs21](https://github.com/theLSA/cs-checklist/raw/master/demo/cs21.png)
 
-
+<br/>
 
 #### **授权认证缺陷**
 
@@ -542,15 +544,15 @@ dvta
 
 https://cloud.tencent.com/developer/article/1430899
 
- 
+<br/> 
 
 #### **越权**
 
- 
+<br/> 
 
 #### **未授权**
 
- 
+<br/> 
 
 案例0-正方教务系统数据库任意操作
 
@@ -560,11 +562,11 @@ https://cloud.tencent.com/developer/article/1430899
 
 本案例来源于wooyun
 
-
+<br/>
 
 #### **溢出**
 
- 
+<br/><br/>
 
 ## **0x08 相关技巧**
 
@@ -574,7 +576,7 @@ ip.addr == 1.2.3.4&&http
 
 2.如果有数据库账号，可以用数据库监控sql语句操作（如sql server profiler）。
 
- 
+<br/><br/> 
 
 ## **0x09 参考资料&&相关资源**
 
