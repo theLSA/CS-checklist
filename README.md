@@ -20,7 +20,7 @@
          * [<strong>4.</strong> <strong>其他漏洞</strong>](#4-其他漏洞)
             * [<strong>爆破</strong>](#爆破)
             * [<strong>用户名枚举</strong>](#用户名枚举)
-            * [<strong>sql语句暴露</strong>](#sql语句暴露)
+            * [<strong>SQL语句暴露</strong>](#sql语句暴露)
             * [<strong>SQL注入</strong>](#sql注入)
             * [<strong>CSV注入</strong>](#csv注入)
             * [<strong>弱口令</strong>](#弱口令)
