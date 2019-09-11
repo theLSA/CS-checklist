@@ -324,7 +324,7 @@ dvta
 
 ![cs10](https://github.com/theLSA/cs-checklist/raw/master/demo/cs10.png)
 
-本案例来源于https://blog.csdn.net/weixin_30685047/article/details/95916065
+//本案例来源于https://blog.csdn.net/weixin_30685047/article/details/95916065
 
 <br/><br/> 
 
@@ -344,7 +344,7 @@ SQL语句明文传输（如利用构造注入，越权等）
 
 ![cs12](https://github.com/theLSA/cs-checklist/raw/master/demo/cs12.png)
 
-本案例来源于wooyun
+//本案例来源于wooyun
 
 <br/><br/>
 
@@ -560,7 +560,7 @@ https://cloud.tencent.com/developer/article/1430899
 
 ![cs22](https://github.com/theLSA/cs-checklist/raw/master/demo/cs22.png)
 
-本案例来源于wooyun
+//本案例来源于wooyun
 
 <br/>
 
