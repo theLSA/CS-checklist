@@ -76,6 +76,8 @@ oracle，mssql，db2......
 
 ## **0x05 测试工具**
 
+//相关工具下载： https://github.com/theLSA/hack-cs-tools
+
 dvta： pc客户端靶场
 
 ida pro： 静态分析工具
