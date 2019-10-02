@@ -392,6 +392,8 @@ SQL语句明文传输（如利用构造注入，越权等）
 
 如登录功能。
 
+![cs23](https://github.com/theLSA/cs-checklist/raw/master/demo/cs23.png)
+
 <br/> 
 
 #### **用户名枚举**
