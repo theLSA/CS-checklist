@@ -167,6 +167,12 @@ BinScope：二进制分析工具
 
 //http的流量可以结合burpsuite方便测试（proxy server设置为burp代理地址）。
 
+![cs24](https://github.com/theLSA/cs-checklist/raw/master/demo/cs24.png)
+
+![cs25](https://github.com/theLSA/cs-checklist/raw/master/demo/cs25.png)
+
+![cs26](https://github.com/theLSA/cs-checklist/raw/master/demo/cs26.png)
+
 <br/> 
 
 ## **0x07 测试点**
