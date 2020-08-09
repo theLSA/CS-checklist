@@ -658,7 +658,7 @@ https://cloud.tencent.com/developer/article/1430899
 
 ## **0x08 相关技巧**
 
-0. 利用procexp --> properties --> tcp/ip 可以快速确定该客户端的服务端/远程连接地址
+0. 利用procexp --> properties --> tcp/ip 可以查看该客户端发起的网络连接，从而快速确定服务端地址
 
 1. wireshark直接过滤出服务器或数据库的ip或协议方便查看，如
 
