@@ -46,7 +46,7 @@
 
 ## **0x01 概述**
 
-PC客户端，有丰富功能的gui，c-s架构。
+PC客户端，有丰富功能的GUI，C-S架构。
 
 ![cs00](https://github.com/theLSA/cs-checklist/raw/master/demo/cs00.png)
 
@@ -390,6 +390,12 @@ SQL语句明文传输（如利用构造注入，越权等）
 
 //本案例来源于wooyun
 
+<br/>
+
+案例1-某系统登录处数据包返回数据库帐号密码
+
+![cs28](https://github.com/theLSA/cs-checklist/raw/master/demo/cs28.png)
+
 <br/><br/>
 
 ### **4.** **其他漏洞**
@@ -411,6 +417,8 @@ SQL语句明文传输（如利用构造注入，越权等）
 #### **暴力破解**
 
 如登录功能。
+
+案例0
 
 ![](https://github.com/theLSA/cs-checklist/raw/master/demo/cs23.png)
 
@@ -437,6 +445,12 @@ SQL语句明文传输（如利用构造注入，越权等）
 案例0
 
 ![cs15](https://github.com/theLSA/cs-checklist/raw/master/demo/cs15.png)
+
+<br/>
+
+案例1
+
+![cs27](https://github.com/theLSA/cs-checklist/raw/master/demo/cs27.png)
 
 <br/>
 
@@ -644,11 +658,13 @@ https://cloud.tencent.com/developer/article/1430899
 
 ## **0x08 相关技巧**
 
-1.wireshark直接过滤出服务器或数据库的ip或协议方便查看，如
+0. 利用procexp --> properties --> tcp/ip 可以快速确定该客户端的服务端/远程连接地址
+
+1. wireshark直接过滤出服务器或数据库的ip或协议方便查看，如
 
 ip.addr == 1.2.3.4&&http
 
-2.如果有数据库账号，可以用数据库监控sql语句操作（如sql server profiler）。
+2. 如果有数据库账号，可以用数据库监控sql语句操作（如sql server profiler）。
 
 <br/><br/> 
 
