@@ -18,20 +18,20 @@
          * [<strong>2.</strong> <strong>信息泄露</strong>](#2-信息泄露)
          * [<strong>3.</strong> <strong>传输流量</strong>](#3-传输流量)
          * [<strong>4.</strong> <strong>其他漏洞</strong>](#4-其他漏洞)
-            * [<strong>爆破</strong>](#爆破)
             * [<strong>用户名枚举</strong>](#用户名枚举)
+            * [<strong>暴力破解</strong>](#暴力破解)
+            * [<strong>弱口令</strong>](#弱口令)
+            * [<strong>密码明文传输</strong>](#密码明文传输)
             * [<strong>SQL语句暴露</strong>](#sql语句暴露)
             * [<strong>SQL注入</strong>](#sql注入)
             * [<strong>CSV注入</strong>](#csv注入)
-            * [<strong>弱口令</strong>](#弱口令)
             * [<strong>XSS</strong>](#xss)
             * [<strong>命令执行</strong>](#命令执行)
-            * [<strong>逻辑缺陷</strong>](#逻辑缺陷)
-            * [<strong>密码明文传输</strong>](#密码明文传输)
             * [<strong>DLL劫持</strong>](#dll劫持)
+            * [<strong>逻辑缺陷</strong>](#逻辑缺陷)
             * [<strong>授权认证缺陷</strong>](#授权认证缺陷)
-            * [<strong>越权</strong>](#越权)
             * [<strong>未授权</strong>](#未授权)
+            * [<strong>越权</strong>](#越权)
             * [<strong>溢出</strong>](#溢出)
       * [<strong>0x08 相关技巧</strong>](#0x08-相关技巧)
       * [<strong>0x09 参考资料&amp;&amp;相关资源</strong>](#0x09-参考资料相关资源)
@@ -46,7 +46,7 @@
 
 ## **0x01 概述**
 
-PC客户端，有丰富功能的gui，c-s架构。
+PC客户端，有丰富功能的GUI，C-S架构。
 
 ![cs00](https://github.com/theLSA/cs-checklist/raw/master/demo/cs00.png)
 
@@ -163,7 +163,7 @@ BinScope：二进制分析工具
 
 1）IE-internet设置-连接-局域网设置。
 
-2）proxifier-proxy server/proxification rules
+2）proxifier --> proxy server/proxification rules
 
 //http的流量可以结合burpsuite方便测试（proxy server设置为burp代理地址）。
 
@@ -390,27 +390,55 @@ SQL语句明文传输（如利用构造注入，越权等）
 
 //本案例来源于wooyun
 
+<br/>
+
+案例1-某系统登录处数据包返回数据库帐号密码
+
+![cs28](https://github.com/theLSA/cs-checklist/raw/master/demo/cs28.png)
+
 <br/><br/>
 
 ### **4.** **其他漏洞**
 
-#### **爆破**
 
-如登录功能。
-
-![cs23](https://github.com/theLSA/cs-checklist/raw/master/demo/cs23.png)
-
-<br/> 
 
 #### **用户名枚举**
 
 案例0
 
-![cs13](https://github.com/theLSA/cs-checklist/raw/master/demo/cs13.png)
+![](https://github.com/theLSA/cs-checklist/raw/master/demo/cs13.png)
 
-![cs14](https://github.com/theLSA/cs-checklist/raw/master/demo/cs14.png)
+![](https://github.com/theLSA/cs-checklist/raw/master/demo/cs14.png)
 
 <br/>
+
+
+
+#### **暴力破解**
+
+如登录功能。
+
+案例0
+
+![](https://github.com/theLSA/cs-checklist/raw/master/demo/cs23.png)
+
+<br/>
+
+
+
+#### **弱口令**
+
+可尝试admin 123456等。
+
+<br/>
+
+
+
+#### **密码明文传输** 
+
+<br/>
+
+
 
 #### **SQL语句暴露**
 
@@ -419,6 +447,14 @@ SQL语句明文传输（如利用构造注入，越权等）
 ![cs15](https://github.com/theLSA/cs-checklist/raw/master/demo/cs15.png)
 
 <br/>
+
+案例1
+
+![cs27](https://github.com/theLSA/cs-checklist/raw/master/demo/cs27.png)
+
+<br/>
+
+
 
 #### **SQL注入**
 
@@ -456,12 +492,6 @@ xxx’ or 1=1--
 
 <br/> 
 
-#### **弱口令**
-
-可尝试admin 123456等。
-
-<br/>
-
 #### **XSS**
 
 如Electron，NodeWebKit等。
@@ -480,7 +510,7 @@ xss webshell：
 
 ![cs18](https://github.com/theLSA/cs-checklist/raw/master/demo/cs18.png)
 
-Win+node.js:
+windows+node.js:
 
 成功
 
@@ -528,13 +558,9 @@ https://shuimugan.com/bug/view?bug_no=193117
 
 <br/> 
 
-#### **逻辑缺陷**
-
 测试点同web。
 
 <br/>  
-
-#### **密码明文传输** 
 
 <br/> 
 
@@ -582,6 +608,16 @@ dvta
 
 <br/>
 
+
+
+#### **逻辑缺陷**
+
+测试点同web。
+
+<br/>
+
+
+
 #### **授权认证缺陷**
 
 注册表键值，授权服务器返回信息构造。
@@ -591,8 +627,6 @@ dvta
 https://cloud.tencent.com/developer/article/1430899
 
 <br/> 
-
-#### **越权**
 
 <br/> 
 
@@ -610,17 +644,27 @@ https://cloud.tencent.com/developer/article/1430899
 
 <br/>
 
+
+
+#### **越权**
+
+<br/>
+
+
+
 #### **溢出**
 
 <br/><br/>
 
 ## **0x08 相关技巧**
 
-1.wireshark直接过滤出服务器或数据库的ip或协议方便查看，如
+0. 利用procexp --> properties --> tcp/ip 可以查看该客户端发起的网络连接，从而快速确定服务端地址
+
+1. wireshark直接过滤出服务器或数据库的ip或协议方便查看，如
 
 ip.addr == 1.2.3.4&&http
 
-2.如果有数据库账号，可以用数据库监控sql语句操作（如sql server profiler）。
+2. 如果有数据库账号，可以用数据库监控sql语句操作（如sql server profiler）。
 
 <br/><br/> 
 
